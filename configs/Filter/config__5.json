@@ -1,0 +1,267 @@
+{
+  "taskOper": "AND",
+  "groupByLayer": false,
+  "zoomto": false,
+  "zoombackto": false,
+  "allowCustom": false,
+  "allowResetAll": false,
+  "allowTurnOffAll": false,
+  "filters": [
+    {
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_39",
+      "url": "https://gistest.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "name": "Product",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "Variable",
+              "label": "Variable",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "CHL"
+            },
+            "interactiveObj": {
+              "prompt": "Product is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Variable) = 'CHL'",
+            "expr": "UPPER(Variable) = 'CHL'"
+          }
+        ],
+        "expr": "UPPER(Variable) = 'CHL'",
+        "displaySQL": "UPPER(Variable) = 'CHL'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_39",
+      "url": "https://gistest.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "name": "Timestep",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "GroupName is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          }
+        ],
+        "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+        "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_39",
+      "url": "https://gistest.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "name": "Year",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "Year",
+              "label": "Year",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "2002"
+            },
+            "interactiveObj": {
+              "prompt": "Year is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Year) = '2002'",
+            "expr": "UPPER(Year) = '2002'"
+          }
+        ],
+        "expr": "UPPER(Year) = '2002'",
+        "displaySQL": "UPPER(Year) = '2002'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_39",
+      "url": "https://gistest.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "name": "Month",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "07"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '07'",
+            "expr": "UPPER(Month) = '07'"
+          }
+        ],
+        "expr": "UPPER(Month) = '07'",
+        "displaySQL": "UPPER(Month) = '07'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    }
+  ]
+}
