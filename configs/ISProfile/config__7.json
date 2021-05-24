@@ -16,23 +16,5 @@
     "redIndex": null,
     "swirIndex": null,
     "title": "Product"
-  },
-  "gis.niwa.co.nz/server/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer": {
-    "hasOverlap": true,
-    "hasNDVI": false,
-    "ndvi": false,
-    "ndmi": false,
-    "urban": false,
-    "yAxisLabel": "Data Values",
-    "bandCount": 1,
-    "bandNames": [
-      "Band_1"
-    ],
-    "field": "StdTime",
-    "category": "Category",
-    "nirIndex": null,
-    "redIndex": null,
-    "swirIndex": null,
-    "title": "Product"
   }
 }
