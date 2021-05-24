@@ -18,10 +18,10 @@
       "useLogo": false
     }
   },
-  "portalUrl": "https://gistest.niwa.co.nz/portal",
+  "portalUrl": "https://gis.niwa.co.nz/portal",
   "appId": "",
   "authorizedCrossOriginDomains": [
-    "gis.niwa.co.nz",
+    "gistest.niwa.co.nz",
     "arcedevportal.niwa.local",
     "welwarcedev.niwa.local",
     "gis.niwa.co.nz",
@@ -270,10 +270,10 @@
       "right": 0,
       "bottom": 0
     },
-    "itemId": "d33ed1ba17ae46a2b0246f8e9e92e8e7",
+    "itemId": "a2adcb86a3034fc595aeb3d288646a84",
     "mapOptions": {},
     "id": "map",
-    "portalUrl": "https://gistest.niwa.co.nz/portal"
+    "portalUrl": "https://gis.niwa.co.nz/portal"
   },
   "widgetPool": {
     "panel": {
