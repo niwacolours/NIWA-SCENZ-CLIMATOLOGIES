@@ -8,8 +8,8 @@
   "allowTurnOffAll": false,
   "filters": [
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_4600",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
+      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
       "name": "Product",
       "filter": {
         "logicalOperator": "AND",
@@ -72,8 +72,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_4600",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
+      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
       "name": "Timestep",
       "filter": {
         "logicalOperator": "AND",
@@ -93,7 +93,7 @@
               "value": "MonthlyClimatology"
             },
             "interactiveObj": {
-              "prompt": "GroupName is",
+              "prompt": "Timestep is",
               "hint": "",
               "cascade": "previous"
             },
@@ -136,8 +136,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_4600",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
+      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
       "name": "Year",
       "filter": {
         "logicalOperator": "AND",
@@ -200,8 +200,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_4600",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
+      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
       "name": "Month",
       "filter": {
         "logicalOperator": "AND",
@@ -218,7 +218,7 @@
             "valueObj": {
               "isValid": true,
               "type": "unique",
-              "value": "07"
+              "value": "01"
             },
             "interactiveObj": {
               "prompt": "Month is",
@@ -226,12 +226,12 @@
               "cascade": "previous"
             },
             "caseSensitive": false,
-            "displaySQL": "UPPER(Month) = '07'",
-            "expr": "UPPER(Month) = '07'"
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
           }
         ],
-        "expr": "UPPER(Month) = '07'",
-        "displaySQL": "UPPER(Month) = '07'"
+        "expr": "UPPER(Month) = '01'",
+        "displaySQL": "UPPER(Month) = '01'"
       },
       "icon": null,
       "enableMapFilter": true,

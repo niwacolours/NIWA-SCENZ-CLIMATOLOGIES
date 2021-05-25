@@ -1,9 +1,9 @@
 {
-  "name": "SCENZClimatology7DExport",
-  "displayName": "SCENZ_Climatology_7D_Export",
-  "description": "SCENZ_Climatology_YR_Exportusing all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for Annual climatologies to export a table for an input area of pixels",
+  "name": "SCENZClimatologyYRExport1",
+  "displayName": "SCENZ_Climatology_SE_Export",
+  "description": "SCENZ_Climatology_7D_Exportusing all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for 7 Day climatologies to export a table for an input area of pixels",
   "category": "",
-  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Climatology_Export2_GPServer/SCENZ_SCENZ_Climatology_Export2/SCENZClimatology7DExport.htm",
+  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Climatology_Export2_GPServer/SCENZ_SCENZ_Climatology_Export2/SCENZClimatologyYRExport1.htm",
   "serverInfo": {
     "currentVersion": 10.81,
     "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Climatology_Export2/GPServer/",
@@ -12,7 +12,7 @@
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Climatology_Export2/GPServer/SCENZ_Climatology_7D_Export",
+  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Climatology_Export2/GPServer/SCENZ_Climatology_SE_Export",
   "isSynchronous": false,
   "inputParams": [
     {
