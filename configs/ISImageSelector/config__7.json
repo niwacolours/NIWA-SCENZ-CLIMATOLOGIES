@@ -21,5 +21,11 @@
     "objectID": "OBJECTID",
     "category": "Category",
     "title": "Product"
+  },
+  "NIWA_SCENZ_CLIMATOLOGIES_V02_5742": {
+    "imageField": "StdTime",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "Product"
   }
 }

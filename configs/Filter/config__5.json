@@ -8,9 +8,9 @@
   "allowTurnOffAll": false,
   "filters": [
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
-      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
-      "name": "Product",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "name": "Product (toggle on/off if no image)",
       "filter": {
         "logicalOperator": "AND",
         "parts": [
@@ -72,8 +72,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
-      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
       "name": "Timestep",
       "filter": {
         "logicalOperator": "AND",
@@ -136,72 +136,8 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
-      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
-      "name": "Year",
-      "filter": {
-        "logicalOperator": "AND",
-        "parts": [
-          {
-            "fieldObj": {
-              "name": "Year",
-              "label": "Year",
-              "dateFormat": "",
-              "shortType": "string",
-              "type": "esriFieldTypeString"
-            },
-            "operator": "stringOperatorIs",
-            "valueObj": {
-              "isValid": true,
-              "type": "unique",
-              "value": "2002"
-            },
-            "interactiveObj": {
-              "prompt": "Year is",
-              "hint": "",
-              "cascade": "previous"
-            },
-            "caseSensitive": false,
-            "displaySQL": "UPPER(Year) = '2002'",
-            "expr": "UPPER(Year) = '2002'"
-          }
-        ],
-        "expr": "UPPER(Year) = '2002'",
-        "displaySQL": "UPPER(Year) = '2002'"
-      },
-      "icon": null,
-      "enableMapFilter": true,
-      "autoApplyWhenWidgetOpen": false,
-      "collapse": false,
-      "symbol": {
-        "color": [
-          0,
-          0,
-          128,
-          128
-        ],
-        "size": 18,
-        "angle": 0,
-        "xoffset": 0,
-        "yoffset": 0,
-        "type": "esriSMS",
-        "style": "esriSMSCircle",
-        "outline": {
-          "color": [
-            0,
-            0,
-            128,
-            255
-          ],
-          "width": 0.75,
-          "type": "esriSLS",
-          "style": "esriSLSSolid"
-        }
-      }
-    },
-    {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_588",
-      "url": "https://gis.niwa.co.nz/server/rest/services/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
       "name": "Month",
       "filter": {
         "logicalOperator": "AND",
