@@ -1,7 +1,7 @@
 {
   "name": "NIWA-SCENZ-CLIMATOLOGIES-V02",
   "description": "NIWA-SCENZ climatologies imagery service with all timestep averaging (week, month, season and year) and rendering options for all products.",
-  "createdTime": 1621910090070,
-  "lastUpdated": 1624476727512,
+  "createdTime": 1638994658419,
+  "lastUpdated": 1639340156972,
   "creator": "Mark.Gall@niwa.co.nz"
 }
