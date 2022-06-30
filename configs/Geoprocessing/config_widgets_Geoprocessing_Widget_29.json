@@ -51,7 +51,7 @@
   ],
   "outputParams": [
     {
-      "name": "Name_for_CSV_file",
+      "name": "outputFile",
       "dataType": "GPDataFile",
       "description": "",
       "defaultValue": null,
