@@ -18,7 +18,7 @@
       "useLogo": false
     }
   },
-  "portalUrl": "https://gis.niwa.co.nz/portal",
+  "portalUrl": "https://gistest.niwa.co.nz/portal",
   "appId": "",
   "authorizedCrossOriginDomains": [
     "gis.niwa.co.nz",
@@ -269,10 +269,10 @@
       "right": 0,
       "bottom": 0
     },
-    "itemId": "e0a6560d7bae4ed29207d15ba635371a",
+    "itemId": "2356b62ad7ac43b5983231627b42cb9b ",
     "mapOptions": {},
     "id": "map",
-    "portalUrl": "https://gis.niwa.co.nz/portal",
+    "portalUrl": "https://gistest.niwa.co.nz/portal",
     "mapRefreshInterval": {
       "useWebMapRefreshInterval": true
     }
@@ -354,7 +354,7 @@
       },
       {
         "name": "ISExport",
-        "label": "Export (image layer):  Raw data values of pixels. Save to portal or disk. Suggest. Select save to disk. Output Spatial Reference (WebMercatorAS). Current Renderer (uncheck). Define Extent (uncheck) - check if you want only a specific area. Zoom to an area of interest. Pixel Size will change as you zoom in or out. Export. If NOTHING happens. Open Browser Developer Tools (Chrome: Ctrl+Shift+I). Select Network tab. Filter for \"exportImage?f=json\". Double-click (open) the export image. Select (without quotes) https://gis.niwa.co.nz.........tif. Right-click (Go to address). This will download the file to your computer.",
+        "label": "Export (image layer):  Raw data values of pixels. Save to portal or disk. Suggest. Select save to disk. Output Spatial Reference (WebMercatorAS). Current Renderer (uncheck). Define Extent (uncheck) - check if you want only a specific area. Zoom to an area of interest. Pixel Size will change as you zoom in or out. Export. If NOTHING happens. Open Browser Developer Tools (Chrome: Ctrl+Shift+I). Select Network tab. Filter for \"exportImage?f=json\". Double-click (open) the export image. Select (without quotes) https://gistest.niwa.co.nz.........tif. Right-click (Go to address). This will download the file to your computer.",
         "version": "",
         "uri": "widgets/ISExport/Widget",
         "config": "configs/ISExport/config_widgets_ISExport_Widget_25.json",
@@ -469,7 +469,7 @@
     "url": "",
     "rules": []
   },
-  "logoLink": "https://gis.niwa.co.nz/portal/home",
+  "logoLink": "https://gistest.niwa.co.nz/portal/home",
   "dataSource": {
     "dataSources": {},
     "settings": {}
