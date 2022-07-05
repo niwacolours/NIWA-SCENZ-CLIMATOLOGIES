@@ -12,7 +12,7 @@
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_GIS/GPServer/ExportClimatologies7CwInputviaPythonScriptB2",
+  "taskUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_GIS/GPServer/ExportClimatologies7CwInputviaPythonScriptB2",
   "isSynchronous": false,
   "inputParams": [
     {

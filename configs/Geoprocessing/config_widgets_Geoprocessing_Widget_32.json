@@ -1,7 +1,7 @@
 {
   "name": "SCENZClimatologyYRExport",
   "displayName": "SCENZ_Climatology_YR_Export",
-  "description": "SCENZ_Climatology_MO_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for monthly climatologies to export a table for an input area of pixels",
+  "description": "SCENZ_Climatology_YR_Export using all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for annual climatologies to export a table for an input area of pixels",
   "category": "",
   "helpUrl": "https://gis.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MC_GIS_GPServer/15_SCENZ_SCENZ_export_multiTime_MC_GIS/ExportClimatologiesYCwInputviaPythonScriptB2.htm",
   "serverInfo": {
