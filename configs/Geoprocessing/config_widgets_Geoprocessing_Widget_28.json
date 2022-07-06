@@ -1,22 +1,22 @@
 {
   "name": "SCENZClimatology7DExport",
   "displayName": "SCENZ_Climatology_7D_Export",
-  "description": "SCENZ_Climatology_YR_Exportusing all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for Annual climatologies to export a table for an input area of pixels",
-  "category": "",
-  "helpUrl": "https://gis.niwa.co.nz/raster/rest/directories/arcgisoutput/SCENZ/SCENZ_Climatology_Export2_GPServer/SCENZ_SCENZ_Climatology_Export2/SCENZClimatology7DExport.htm",
+  "description": "SCENZ_Climatology_7D_Exportusing all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for 7-Day climatologies to export a table for an input area of pixels",
+  "category": "Oceans",
+  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MC_GISTEST_GPServer/15_SCENZ_SCENZ_export_multiTime_MC_GISTEST/ExportClimatologies7CwInputviaPythonScriptB2.htm",
   "serverInfo": {
-    "currentVersion": 10.81,
-    "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Climatology_Export2/GPServer/",
+    "currentVersion": 10.91,
+    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_GISTEST/GPServer",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_Climatology_Export2/GPServer/SCENZ_Climatology_7D_Export",
+  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_GISTEST/GPServer/ExportClimatologies7CwInputviaPythonScriptB2",
   "isSynchronous": false,
   "inputParams": [
     {
-      "name": "PolygonInput",
+      "name": "inputAreaPolygon",
       "dataType": "GPFeatureRecordSetLayer",
       "description": "Input Polygon",
       "defaultValue": {
@@ -27,51 +27,6 @@
           "wkid": 2193,
           "latestWkid": 2193
         },
-        "fields": [
-          {
-            "name": "OBJECTID",
-            "type": "esriFieldTypeOID",
-            "alias": "OBJECTID"
-          },
-          {
-            "name": "Name",
-            "type": "esriFieldTypeString",
-            "alias": "Name",
-            "length": 255
-          },
-          {
-            "name": "Text",
-            "type": "esriFieldTypeString",
-            "alias": "Text",
-            "length": 255
-          },
-          {
-            "name": "IntegerValue",
-            "type": "esriFieldTypeInteger",
-            "alias": "IntegerValue"
-          },
-          {
-            "name": "DoubleValue",
-            "type": "esriFieldTypeDouble",
-            "alias": "DoubleValue"
-          },
-          {
-            "name": "DateTime",
-            "type": "esriFieldTypeDate",
-            "alias": "DateTime",
-            "length": 8
-          },
-          {
-            "name": "Shape_Length",
-            "type": "esriFieldTypeDouble",
-            "alias": "Shape_Length"
-          },
-          {
-            "name": "Shape_Area",
-            "type": "esriFieldTypeDouble",
-            "alias": "Shape_Area"
-          }
-        ],
         "features": [],
         "exceededTransferLimit": false
       },
@@ -96,7 +51,7 @@
   ],
   "outputParams": [
     {
-      "name": "Name_for_CSV_file",
+      "name": "outputFile",
       "dataType": "GPDataFile",
       "description": "",
       "defaultValue": null,
