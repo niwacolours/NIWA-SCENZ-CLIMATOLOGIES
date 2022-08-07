@@ -3,16 +3,16 @@
   "displayName": "SCENZ_Climatology_7D_Export",
   "description": "SCENZ_Climatology_7D_Exportusing all Input Parameters: uses the Sampling tool on a Multidimensional CRF raster for 7-Day climatologies to export a table for an input area of pixels",
   "category": "Oceans",
-  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MC_GISTEST_GPServer/15_SCENZ_SCENZ_export_multiTime_MC_GISTEST/ExportClimatologies7CwInputviaPythonScriptB2.htm",
+  "helpUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/directories/arcgisoutput/15_SCENZ/SCENZ_export_multiTime_MC_V3_GISTEST_GPServer/15_SCENZ_SCENZ_export_multiTime_MC_V3_GISTEST/ExportClimatologies7CwInputviaPythonScriptB2.htm",
   "serverInfo": {
     "currentVersion": 10.91,
-    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_GISTEST/GPServer",
+    "url": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_V3_GISTEST/GPServer",
     "hasResultMapServer": false,
     "resultMapServerName": "",
     "supportsUpload": false
   },
   "useResultMapServer": false,
-  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_GISTEST/GPServer/ExportClimatologies7CwInputviaPythonScriptB2",
+  "taskUrl": "https://gistest.niwa.co.nz/rasteranalytics/rest/services/15_SCENZ/SCENZ_export_multiTime_MC_V3_GISTEST/GPServer/ExportClimatologies7CwInputviaPythonScriptB2",
   "isSynchronous": false,
   "inputParams": [
     {
