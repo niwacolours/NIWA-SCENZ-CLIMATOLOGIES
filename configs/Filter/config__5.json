@@ -132,7 +132,7 @@
     },
     {
       "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/PROD_V3_All_CLIMATOLOGY_ref/ImageServer",
       "name": "Timestep",
       "filter": {
         "logicalOperator": "AND",
@@ -152,8 +152,8 @@
               "type": "uniquePredefined",
               "value": [
                 {
-                  "value": "7DClimatology",
-                  "alias": "7DClimatology",
+                  "value": "7DayClimatology",
+                  "alias": "7DayClimatology",
                   "isChecked": false
                 },
                 {
@@ -220,7 +220,7 @@
     },
     {
       "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/NIWA_SCENZ_CLIMATOLOGIES_V02/ImageServer",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/PROD_V3_All_CLIMATOLOGY_ref/ImageServer",
       "name": "Month",
       "filter": {
         "logicalOperator": "AND",
