@@ -59,6 +59,11 @@
                   "isChecked": false
                 },
                 {
+                  "value": "PAR",
+                  "alias": "PAR",
+                  "isChecked": false
+                },
+                {
                   "value": "POB",
                   "alias": "POB",
                   "isChecked": false
