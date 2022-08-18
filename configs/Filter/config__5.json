@@ -147,8 +147,8 @@
               "type": "uniquePredefined",
               "value": [
                 {
-                  "value": "7DClimatology",
-                  "alias": "7DClimatology",
+                  "value": "7DayClimatology",
+                  "alias": "7DayClimatology",
                   "isChecked": false
                 },
                 {
