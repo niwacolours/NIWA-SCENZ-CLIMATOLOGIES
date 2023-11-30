@@ -1,5 +1,5 @@
 {
-  "taskOper": "AND",
+  "taskOper": "OR",
   "groupByLayer": false,
   "zoomto": false,
   "zoombackto": false,
@@ -8,132 +8,9 @@
   "allowTurnOffAll": false,
   "filters": [
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/PROD_V3_All_CLIMATOLOGY_ref/ImageServer",
-      "name": "Product (toggle on/off if no image)",
-      "filter": {
-        "logicalOperator": "AND",
-        "parts": [
-          {
-            "fieldObj": {
-              "name": "Variable",
-              "label": "Variable",
-              "dateFormat": "",
-              "shortType": "string",
-              "type": "esriFieldTypeString"
-            },
-            "operator": "stringOperatorIs",
-            "valueObj": {
-              "isValid": true,
-              "selectUI": "dropdown",
-              "type": "uniquePredefined",
-              "value": [
-                {
-                  "value": "ADET",
-                  "alias": "ADET",
-                  "isChecked": false
-                },
-                {
-                  "value": "BBP",
-                  "alias": "BBP",
-                  "isChecked": false
-                },
-                {
-                  "value": "CHL",
-                  "alias": "CHL",
-                  "isChecked": true
-                },
-                {
-                  "value": "EBED",
-                  "alias": "EBED",
-                  "isChecked": false
-                },
-                {
-                  "value": "HVIS",
-                  "alias": "HVIS",
-                  "isChecked": false
-                },
-                {
-                  "value": "KPAR",
-                  "alias": "KPAR",
-                  "isChecked": false
-                },
-                {
-                  "value": "PAR",
-                  "alias": "PAR",
-                  "isChecked": false
-                },
-                {
-                  "value": "POB",
-                  "alias": "POB",
-                  "isChecked": false
-                },
-                {
-                  "value": "SEC",
-                  "alias": "SEC",
-                  "isChecked": false
-                },
-                {
-                  "value": "SST",
-                  "alias": "SST",
-                  "isChecked": false
-                },
-                {
-                  "value": "TSS",
-                  "alias": "TSS",
-                  "isChecked": false
-                }
-              ],
-              "emptyLabel": "- empty -",
-              "enableEmpty": false
-            },
-            "interactiveObj": {
-              "prompt": "Product is (select  \"Renderer\" first or put on \"stretch\")",
-              "hint": "",
-              "cascade": "none"
-            },
-            "caseSensitive": false,
-            "displaySQL": "UPPER(Variable) = 'CHL'",
-            "expr": "UPPER(Variable) = 'CHL'"
-          }
-        ],
-        "expr": "UPPER(Variable) = 'CHL'",
-        "displaySQL": "UPPER(Variable) = 'CHL'"
-      },
-      "icon": null,
-      "enableMapFilter": true,
-      "autoApplyWhenWidgetOpen": true,
-      "collapse": false,
-      "symbol": {
-        "color": [
-          0,
-          0,
-          128,
-          128
-        ],
-        "size": 18,
-        "angle": 0,
-        "xoffset": 0,
-        "yoffset": 0,
-        "type": "esriSMS",
-        "style": "esriSMSCircle",
-        "outline": {
-          "color": [
-            0,
-            0,
-            128,
-            255
-          ],
-          "width": 0.75,
-          "type": "esriSLS",
-          "style": "esriSLSSolid"
-        }
-      }
-    },
-    {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/PROD_V3_All_CLIMATOLOGY_ref/ImageServer",
-      "name": "Timestep",
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_764_9547",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "ADET (/m)",
       "filter": {
         "logicalOperator": "AND",
         "parts": [
@@ -148,45 +25,218 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "selectUI": "dropdown",
-              "type": "uniquePredefined",
-              "value": [
-                {
-                  "value": "7DayClimatology",
-                  "alias": "7DayClimatology",
-                  "isChecked": false
-                },
-                {
-                  "value": "MonthlyClimatology",
-                  "alias": "MonthlyClimatology",
-                  "isChecked": true
-                },
-                {
-                  "value": "SeasonalClimatology",
-                  "alias": "SeasonalClimatology",
-                  "isChecked": false
-                },
-                {
-                  "value": "AnnualClimatology",
-                  "alias": "AnnualClimatology",
-                  "isChecked": false
-                }
-              ],
-              "emptyLabel": "- empty -",
-              "enableEmpty": false
+              "type": "unique",
+              "value": "MonthlyClimatology"
             },
             "interactiveObj": {
               "prompt": "Timestep is",
               "hint": "",
-              "cascade": "none"
+              "cascade": "previous"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
             "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
           }
         ],
-        "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
-        "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875_4746",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "BBP (/m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_764",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "CHL (mg/m3)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
       },
       "icon": null,
       "enableMapFilter": true,
@@ -219,12 +269,35 @@
       }
     },
     {
-      "layerId": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
-      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/PROD_V3_All_CLIMATOLOGY_ref/ImageServer",
-      "name": "Month",
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818_5139_6763",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "EBED (M/m2/day)",
       "filter": {
         "logicalOperator": "AND",
         "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
           {
             "fieldObj": {
               "name": "Month",
@@ -236,26 +309,631 @@
             "operator": "stringOperatorIs",
             "valueObj": {
               "isValid": true,
-              "type": "value",
+              "type": "unique",
               "value": "01"
             },
             "interactiveObj": {
               "prompt": "Month is",
               "hint": "",
-              "cascade": "none"
+              "cascade": "previous"
             },
             "caseSensitive": false,
             "displaySQL": "UPPER(Month) = '01'",
             "expr": "UPPER(Month) = '01'"
           }
         ],
-        "expr": "UPPER(Month) = '01'",
-        "displaySQL": "UPPER(Month) = '01'"
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
       },
       "icon": null,
       "enableMapFilter": true,
       "autoApplyWhenWidgetOpen": true,
-      "collapse": false,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "HVIS (m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875_5516",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "KPAR (/m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818_5139",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "PAR (M/m2/day)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": ""
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "",
+        "displaySQL": ""
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "POB (0-1)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_2662_1850",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "SEC (m)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_2662",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "SST (dC)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    },
+    {
+      "layerId": "PROD_V3_All_CLIMATOLOGY_ref_764_5237",
+      "url": "https://gis.niwa.co.nz/raster/rest/services/SCENZ/SCENZ_All_CLIMATOLOGY_NZTM_Ref/ImageServer",
+      "name": "TSS (g/m3)",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "GroupName",
+              "label": "GroupName",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "MonthlyClimatology"
+            },
+            "interactiveObj": {
+              "prompt": "Timestep is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'",
+            "expr": "UPPER(GroupName) = 'MONTHLYCLIMATOLOGY'"
+          },
+          {
+            "fieldObj": {
+              "name": "Month",
+              "label": "Month",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "unique",
+              "value": "01"
+            },
+            "interactiveObj": {
+              "prompt": "Month is",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "displaySQL": "UPPER(Month) = '01'",
+            "expr": "UPPER(Month) = '01'"
+          }
+        ],
+        "expr": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')",
+        "displaySQL": "(UPPER(GroupName) = 'MONTHLYCLIMATOLOGY') AND (UPPER(Month) = '01')"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": true,
       "symbol": {
         "color": [
           0,

@@ -1,31 +1,97 @@
 {
   "display": "both",
-  "zoomLevel": 0,
+  "zoomLevel": 1,
   "searchExtent": 75,
   "autoRefresh": false,
-  "listImagesSeparate": "on",
-  "NIWA_SCENZ_TIMESERIES_V02_1878": {
-    "imageField": "StdTime",
-    "objectID": "OBJECTID",
-    "category": "Category",
-    "title": "Product"
-  },
-  "secondaryLayer": {
-    "imageField": "",
-    "objectID": "OBJECTID",
-    "category": "Category",
-    "title": "Product"
-  },
-  "NIWA_SCENZ_CLIMATOLOGIES_V02_588": {
-    "imageField": "StdTime",
-    "objectID": "OBJECTID",
-    "category": "Category",
-    "title": "Product"
-  },
+  "listImagesSeparate": true,
   "NIWA_SCENZ_CLIMATOLOGIES_V02_5742": {
-    "imageField": "StdTime",
+    "imageField": "ProductName",
     "objectID": "OBJECTID",
     "category": "Category",
-    "title": "Product"
+    "title": "HVIS Climatology"
+  },
+  "189b9b24a1c-layer-5": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "HVIS Climatology"
+  },
+  "189b9b1641b-layer-4": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "HVIS Climatology"
+  },
+  "189cd5813b4-layer-1": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "SST"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_764_5237": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "TSS (g/m3)"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_2662": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "SST"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_2662_1850": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "SEC"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "POB"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818_5139": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "PAR"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875_5516": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "KPAR"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "HVIS (/m)"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818_5139_6763": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "EBED"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_764": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "CHL"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875_4746": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "BBP"
+  },
+  "PROD_V3_All_CLIMATOLOGY_ref_764_9547": {
+    "imageField": "ProductName",
+    "objectID": "OBJECTID",
+    "category": "Category",
+    "title": "ADET"
   }
 }

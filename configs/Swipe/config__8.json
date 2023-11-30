@@ -1,11 +1,68 @@
 {
   "style": "vertical",
   "layerState": {
-    "NIWA_SCENZ_CLIMATOLOGIES_V02_5742": {
+    "18acda969e8-layer-21": {
+      "selected": false
+    },
+    "18acda2dd40-layer-20": {
+      "selected": false
+    },
+    "189d6791fcc-layer-16": {
+      "selected": false
+    },
+    "189d6791fcb-layer-15": {
+      "selected": false
+    },
+    "189d6791fca-layer-14": {
+      "selected": false
+    },
+    "189d6791fc8-layer-13": {
+      "selected": false
+    },
+    "189d67afac2-layer-18": {
+      "selected": false
+    },
+    "189d67bbfbe-layer-19": {
+      "selected": false
+    },
+    "189d67cc581-layer-20": {
+      "selected": false
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_764_9547": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875_4746": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_764": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818_5139_6763": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_764_9547_9875_5516": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818_5139": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_2662_1850_4818": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_2662_1850": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_2662": {
+      "selected": true
+    },
+    "PROD_V3_All_CLIMATOLOGY_ref_764_5237": {
       "selected": true
     }
   },
-  "layer": "NIWA_SCENZ_CLIMATOLOGIES_V02_5742",
+  "layer": "PROD_V3_All_CLIMATOLOGY_ref_764_9547",
   "isZoom": false,
   "handleColor": "#dadada",
   "layerMode": "single",
